@@ -186,6 +186,11 @@ body {
   background: #141414;
 }
 
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -198,7 +203,6 @@ header {
 .header__nav {
   width: 1024px;
   margin: 0 auto;
-  padding-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +219,7 @@ header {
   border: 0px;
 }
 .header__nav ul {
-  margin: 0 auto;
+  margin: 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +287,7 @@ header {
 }
 
 .musicPlayer-container {
-  width: 455px;
+  width: 495px;
 }
 
 .musicPlayer {
@@ -308,7 +312,7 @@ header {
 }
 
 .profileLink {
-  width: 116px;
+  width: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,13 +335,12 @@ header {
 }
 
 main {
-  width: 1034px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16.5% 83.5%;
+  grid-template-columns: 16.5% 83.5%;
   height: 2000px;
-  margin: 64px auto 0px auto;
-}
-
-.side-bar {
-  width: 164px;
+  margin: 45px auto 0px auto;
 }
 
 .side-bar__menu ul {
@@ -345,7 +348,7 @@ main {
 }
 .side-bar__menu li {
   width: 164px;
-  margin: 3px 0px 3px 0px;
+  margin: 0px 0px 6px 0px;
   list-style-type: none;
 }
 .side-bar__menu span {
@@ -418,4 +421,223 @@ main {
   background: #b6b6b6;
   cursor: default;
   margin: 8px 0px 8px 50px;
+}
+
+.Profile__Wrapper {
+  width: 100%;
+  margin: 17px 0px 0px 10px;
+  padding-right: 15px;
+}
+
+.Profile__Header {
+  width: 100%;
+}
+
+.Profile__Header_Banner {
+  height: 250px;
+  border-radius: 17px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/D2hkCttrKuk.jpg);
+}
+
+.Profile__Header_Info {
+  width: 96.45%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: 25px;
+  border-radius: 17px;
+  padding: 15px;
+  background-color: #222222;
+}
+
+.Profile__Header_Avatar {
+  position: relative;
+  bottom: 85px;
+}
+
+.Avatar_150 {
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+}
+
+.Profile__Avatar_OnlineBar {
+  position: relative;
+  bottom: 35px;
+  left: 120px;
+}
+
+.Online__Yes {
+  width: 13px;
+  height: 13px;
+  background: #4bb34b;
+  border: 4px solid #222222;
+  border-radius: 80px;
+}
+
+.Profile__Header_MainInfo {
+  width: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Profile__MainInfo_Name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Profile__MainInfo_Name h2 {
+  color: #E1E3E6;
+  font-weight: 600px;
+  font-size: 21px;
+  margin: 0px 10px 0px 0px;
+}
+.Profile__MainInfo_Name button {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 0px;
+  padding: 0px;
+}
+.Profile__MainInfo_Name img {
+  width: 20px;
+  height: 20px;
+}
+
+.Profile__MainInfo_Status {
+  color: #E1E3E6;
+}
+
+.Profile__MainInfo_Music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Profile__MainInfo_Music a {
+  color: #529EF4;
+  text-decoration: none;
+}
+
+.Profile__MainInfo_AdditionInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Profile__AdditionInfo_InfoBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Profile__AdditionInfo_InfoBlock img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+.Profile__AdditionInfo_InfoBlock button {
+  background: transparent;
+  border: 0px;
+  color: #858585;
+  font-size: 13px;
+  font-weight: 400px;
+  padding: 0px;
+}
+.Profile__AdditionInfo_InfoBlock a {
+  color: #858585;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400px;
+}
+
+.Profile__Header_Actions {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Profile__Actions_Block {
+  background: #424242;
+  font-size: 12px;
+  color: #E1E3E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+}
+.Profile__Actions_Block a {
+  color: #E1E3E6;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.Profile__Actions_Block span {
+  padding: 8px 16px;
 }
