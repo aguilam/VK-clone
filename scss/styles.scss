@@ -425,6 +425,7 @@ main{
 }
 .Profile__Wall_Header{
   padding: 10px 15px;
+  border-bottom: 1px solid #4f4f50;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -475,6 +476,8 @@ main{
 .Profile__Tester_Container{
   padding: 16px;
   span{
+    font-weight: 400;
+    font-size: 14px;
     color: #E1E3E6;
     margin-left: 10px;
   }
@@ -484,4 +487,87 @@ main{
     align-items: center;
     text-decoration: none;
   }
+}
+.Profile__Main_Friends{
+  margin-bottom: 16px;
+  padding: 16px;
+  a{
+    text-decoration: none;
+  }
+}
+.Profile__Main_Section_Title{
+  font-size: 14px;
+  font-weight: 600;
+  color: #E1E3E6;
+}
+.Profile__Main_Section_Number{
+  font-size: 13px;
+  font-weight: 500;
+  color: #858585;
+}
+.Profile__Friends_Container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  :hover{
+    background-color: #4f4f50;
+  }
+}
+.Profile__Friends_Link{
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 10px;
+  color: #E1E3E6;
+  text-align: center;
+  img{
+    width: 48px;
+    height: 48px;
+    border-radius: 60px;
+  }
+}
+.Profile__Main_Gifts{
+  margin-bottom: 16px;
+  padding: 20px 16px;
+}
+.Profile__Gifts_Row{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+  }
+}
+.Profile__Main_Subscriptions{
+  padding: 16px;
+}
+.Main__Subscriptions_List{
+  margin-top: 10px;
+  :hover{
+    background-color: #4f4f50;
+  }
+}
+.Subscriptions__List_Item{
+  display: flex;
+  flex-direction: row;
+  img{
+    width: 48px;
+    height: 48px;
+    border-radius: 60px;
+  }
+}
+.Text-container{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Subscriptions__Item_Title{
+
+}
+.Subscriptions__Item_Description{
+
 }
