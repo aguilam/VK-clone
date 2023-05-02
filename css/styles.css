@@ -295,6 +295,7 @@ header {
 
 .musicPlayer-container {
   width: 495px;
+  height: 100%;
 }
 
 .musicPlayer {
@@ -382,11 +383,13 @@ main {
   width: 148px;
 }
 .side-bar__link_container :hover {
-  background: red;
+  background: #4f4f50;
 }
 
 .side-bar__link {
   height: 30px;
+  padding-left: 5px;
+  border-radius: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,6 +580,9 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.Profile__MainInfo_AdditionInfo :hover {
+  text-decoration: underline;
+}
 
 .Profile__AdditionInfo_InfoBlock {
   display: -webkit-box;
@@ -626,6 +632,10 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.Profile__Header_Actions :hover {
+  background: #4d4c4c;
+  border-radius: 8px;
+}
 
 .Profile__Actions_Block {
   background: #424242;
@@ -649,7 +659,7 @@ main {
   padding: 8px 16px;
 }
 .Profile__Actions_Block span {
-  padding: 8px 16px;
+  padding: 8px 8px 8px 16px;
 }
 
 .Profile__Main_Container {
@@ -781,6 +791,9 @@ main {
   color: #E1E3E6;
   font-size: 14px;
 }
+.Profile__Photos_Buttons :hover {
+  background: #4d4c4c;
+}
 .Profile__Photos_Buttons button {
   width: 49%;
   height: 32px;
@@ -829,6 +842,7 @@ main {
 
 .Profile__Wall_Header {
   padding: 10px 15px;
+  border-bottom: 1px solid #4f4f50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -918,12 +932,19 @@ main {
 
 .Profile__Main_Tester {
   margin-bottom: 16px;
+  padding: 7px;
+}
+.Profile__Main_Tester :hover {
+  background-color: #4f4f50;
 }
 
 .Profile__Tester_Container {
-  padding: 16px;
+  border-radius: 10px;
+  padding: 9px;
 }
 .Profile__Tester_Container span {
+  font-weight: 400;
+  font-size: 14px;
   color: #E1E3E6;
   margin-left: 10px;
 }
@@ -939,4 +960,220 @@ main {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+}
+
+.Profile__Main_Friends {
+  margin-bottom: 16px;
+  padding: 16px;
+}
+.Profile__Main_Friends a {
+  text-decoration: none;
+}
+
+.Profile__Main_Section_Title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #E1E3E6;
+}
+
+.Profile__Main_Section_Number {
+  font-size: 13px;
+  font-weight: 500;
+  color: #858585;
+}
+
+.Profile__Friends_Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+.Profile__Friends_Container :hover {
+  background-color: #4f4f50;
+}
+
+.Profile__Friends_Link {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 10px;
+  color: #E1E3E6;
+  text-align: center;
+}
+.Profile__Friends_Link img {
+  width: 48px;
+  height: 48px;
+  border-radius: 60px;
+}
+
+.Profile__Main_Gifts {
+  margin-bottom: 16px;
+  padding: 20px 16px;
+}
+
+.Profile__Gifts_Row {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Profile__Gifts_Row img {
+  border-radius: 15px;
+  width: 64px;
+  height: 64px;
+}
+
+.Profile__Main_Subscriptions {
+  margin-bottom: 16px;
+  padding: 16px 8px;
+}
+.Profile__Main_Subscriptions a {
+  text-decoration: none;
+}
+
+.Profile__Subscriptions_List {
+  margin-top: 10px;
+}
+.Profile__Subscriptions_List :hover {
+  background-color: #4f4f50;
+}
+
+.Profile__Subscriptions__List_Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 13px;
+  padding: 3px 10px;
+}
+.Profile__Subscriptions__List_Item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 60px;
+}
+
+.Profile__List__Item_Text-container {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8px 0px;
+}
+
+.Profile__Subscriptions__Item_Title {
+  font-size: 13px;
+  font-weight: 400;
+  color: #E1E3E6;
+  margin-bottom: 5px;
+}
+
+.Profile__Subscriptions__Item_Description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #858585;
+}
+
+.Profile__Main_Videos {
+  padding: 16px;
+}
+.Profile__Main_Videos a {
+  text-decoration: none;
+}
+
+.Profile__Videos_Video-container {
+  margin: 10px 0px;
+}
+
+.Profile__Videos_Video {
+  width: 215px;
+  height: 120px;
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  border-radius: 13px;
+  background-image: url("https://i.mycdn.me/getVideoPreview?id=1522987895391&idx=7&type=39&tkn=bGCQYcynzq05BXzkN_Bt895PpoE&fn=vid_t");
+  background-size: 100%;
+  background-position: center;
+}
+.Profile__Videos_Video span {
+  color: #E1E3E6;
+  background: rgba(20, 20, 20, 0.7);
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.Profile__Videos_Text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Profile__Videos_Text-container a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #E1E3E6;
+  margin: 10px 0px 3px 0px;
+}
+.Profile__Videos_Text-container span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #858585;
+}
+
+.Profile__Videos_Button-container :hover {
+  background: #4d4c4c;
+}
+.Profile__Videos_Button-container button {
+  width: 100%;
+  height: 32px;
+  border: 0px;
+  border-radius: 8px;
+  background: #424242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E1E3E6;
+  font-size: 14px;
 }

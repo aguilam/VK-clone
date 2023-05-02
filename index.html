@@ -250,7 +250,7 @@
 							<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M10 10.75a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-2a.75.75 0 0 1 .75-.75Z"></path><path fill="#858585" fill-rule="evenodd" d="M6 7.03V5a4 4 0 0 1 8 0v2.03c.59.03 1 .12 1.36.3a3 3 0 0 1 1.31 1.3c.33.65.33 1.49.33 3.17v1.4c0 1.68 0 2.52-.33 3.16a3 3 0 0 1-1.3 1.31c-.65.33-1.49.33-3.17.33H7.8c-1.68 0-2.52 0-3.16-.33a3 3 0 0 1-1.31-1.3C3 15.71 3 14.87 3 13.2v-1.4c0-1.68 0-2.52.33-3.16a3 3 0 0 1 1.3-1.31c.36-.18.78-.27 1.37-.3Zm4-4.53A2.5 2.5 0 0 1 12.5 5v2h-5V5A2.5 2.5 0 0 1 10 2.5Zm-2.2 6c-.86 0-1.42 0-1.85.04-.4.03-.56.09-.63.12a1.5 1.5 0 0 0-.66.66c-.03.07-.1.22-.12.63-.04.43-.04.99-.04 1.85v1.4c0 .86 0 1.42.04 1.85.03.4.09.56.12.63.15.28.38.51.66.66.07.03.22.1.63.12.43.04.99.04 1.85.04h4.4c.86 0 1.42 0 1.85-.04.4-.03.56-.09.63-.12a1.5 1.5 0 0 0 .66-.66c.03-.07.1-.22.12-.63.04-.43.04-.99.04-1.85v-1.4c0-.86 0-1.42-.04-1.85-.03-.4-.09-.56-.12-.63a1.5 1.5 0 0 0-.66-.66c-.07-.03-.22-.1-.63-.12-.43-.04-.99-.04-1.85-.04H7.8Z" clip-rule="evenodd"></path></svg></a>
 						</div>
 						<div class="Profile__Main_Wall Border-Inner">
-							<div class="Profile__Wall_Header Border-Inner">
+							<div class="Profile__Wall_Header">
 								<div class="Profile__Header_Tabs-Container">
 									<div class="Profile__Tabs-Container_Tab_Active">
 										<span>Все записи</span>
@@ -283,39 +283,39 @@
 						</section>
 						<section class="Profile__Main_Friends Border-Inner">
 							<a href="">
-								<span>Друзья </span>
-								<span>50</span>
+								<span class="Profile__Main_Section_Title">Друзья </span>
+								<span class="Profile__Main_Section_Number">50</span>
 							</a>
-							<div class="Friends__Container">
-								<a href="#" class="Friends__Link">
+							<div class="Profile__Friends_Container">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
-								<a href="#" class="Friends__Link">
+								<a href="#" class="Profile__Friends_Link">
 									<img src="./img/Spotty.jpg" alt="">
 									<span>Спотти</span>
 								</a>
@@ -323,75 +323,76 @@
 						</section>
 						<section class="Profile__Main_Gifts Border-Inner">
 							<div>
-								<span>Подарки </span> 
-								<span>150</span>
+								<span class="Profile__Main_Section_Title">Подарки </span> 
+								<span class="Profile__Main_Section_Number">150</span>
 							</div>
-							<div>
+							<div class="Profile__Gifts_Row">
 								<img src="https://vk.com/sticker/4-1809-256w" alt="">
-								<img src="https://vk.com/sticker/4-1809-256w" alt="">
-								<img src="https://vk.com/sticker/4-1809-256w" alt="">
-								<img src="https://vk.com/sticker/4-1809-256w" alt="">
+								<img src="https://vk.com/images/gift/1321/256.jpg" alt="">
+								<img src="https://vk.com/images/gift/1253/256.jpg" alt="">
+								<img src="https://vk.com/sticker/4-1515-256w" alt="">
 							</div>
 						</section>
 						<section class="Profile__Main_Subscriptions Border-Inner">
-							<div class="Main__Subscriptions_Title">
-								<span>Подписки</span>
-								<span>14</span>
+							<div>
+								<span class="Profile__Main_Section_Title" style="margin-left: 10px;">Подписки</span>
+								<span class="Profile__Main_Section_Number">14</span>
 							</div>
-							<div class="Main__Subscriptions_List">
-								<a href="#" class="Subscriptions__List_Item">
+							<div class="Profile__Subscriptions_List">
+								<a href="#" class="Profile__Subscriptions__List_Item">
 									<img src="https://sun7-22.userapi.com/s/v1/ig1/Dlfkb-4XaW_7eOyMHVr0TefpNU_z-fCOSMpSFVHjQI_NIYaMBFbzUNausyh4nlDlfpftUK-P.jpg?size=100x100&quality=96&crop=0,0,567,567&ava=1" alt="">
-									<div>
-										<span class="Subscriptions__Item_Title">Хабр</span>
-										<span class="Subscriptions__Item_Description">НЛО с вами!</span>
+									<div class="Profile__List__Item_Text-container">
+										<span class="Profile__Subscriptions__Item_Title">Хабр</span>
+										<span class="Profile__Subscriptions__Item_Description">НЛО с вами!</span>
 									</div>
 								</a>
-								<a href="#" class="Subscriptions__List_Item">
+								<a href="#" class="Profile__Subscriptions__List_Item">
 									<img src="https://sun7-22.userapi.com/s/v1/ig1/Dlfkb-4XaW_7eOyMHVr0TefpNU_z-fCOSMpSFVHjQI_NIYaMBFbzUNausyh4nlDlfpftUK-P.jpg?size=100x100&quality=96&crop=0,0,567,567&ava=1" alt="">
-									<div>
-										<span class="Subscriptions__Item_Title">Хабр</span>
-										<span class="Subscriptions__Item_Description">НЛО с вами!</span>
+									<div class="Profile__List__Item_Text-container">
+										<span class="Profile__Subscriptions__Item_Title">Хабр</span>
+										<span class="Profile__Subscriptions__Item_Description">НЛО с вами!</span>
 									</div>
 								</a>
-								<a href="#" class="Subscriptions__List_Item">
+								<a href="#" class="Profile__Subscriptions__List_Item">
 									<img src="https://sun7-22.userapi.com/s/v1/ig1/Dlfkb-4XaW_7eOyMHVr0TefpNU_z-fCOSMpSFVHjQI_NIYaMBFbzUNausyh4nlDlfpftUK-P.jpg?size=100x100&quality=96&crop=0,0,567,567&ava=1" alt="">
-									<div>
-										<span class="Subscriptions__Item_Title">Хабр</span>
-										<span class="Subscriptions__Item_Description">НЛО с вами!</span>
+									<div class="Profile__List__Item_Text-container">
+										<span class="Profile__Subscriptions__Item_Title">Хабр</span>
+										<span class="Profile__Subscriptions__Item_Description">НЛО с вами!</span>
 									</div>
 								</a>
-								<a href="#" class="Subscriptions__List_Item">
+								<a href="#" class="Profile__Subscriptions__List_Item">
 									<img src="https://sun7-22.userapi.com/s/v1/ig1/Dlfkb-4XaW_7eOyMHVr0TefpNU_z-fCOSMpSFVHjQI_NIYaMBFbzUNausyh4nlDlfpftUK-P.jpg?size=100x100&quality=96&crop=0,0,567,567&ava=1" alt="">
-									<div>
-										<span class="Subscriptions__Item_Title">Хабр</span>
-										<span class="Subscriptions__Item_Description">НЛО с вами!</span>
+									<div class="Profile__List__Item_Text-container">
+										<span class="Profile__Subscriptions__Item_Title">Хабр</span>
+										<span class="Profile__Subscriptions__Item_Description">НЛО с вами!</span>
 									</div>
 								</a>
-								<a href="#" class="Subscriptions__List_Item">
+								<a href="#" class="Profile__Subscriptions__List_Item">
 									<img src="https://sun7-22.userapi.com/s/v1/ig1/Dlfkb-4XaW_7eOyMHVr0TefpNU_z-fCOSMpSFVHjQI_NIYaMBFbzUNausyh4nlDlfpftUK-P.jpg?size=100x100&quality=96&crop=0,0,567,567&ava=1" alt="">
-									<div>
-										<span class="Subscriptions__Item_Title">Хабр</span>
-										<span class="Subscriptions__Item_Description">НЛО с вами!</span>
+									<div class="Profile__List__Item_Text-container">
+										<span class="Profile__Subscriptions__Item_Title">Хабр</span>
+										<span class="Profile__Subscriptions__Item_Description">НЛО с вами!</span>
 									</div>
 								</a>
 							</div>
 						</section>
 						<section class="Profile__Main_Videos Border-Inner">
 							<a href="#">
-								<span>Видео </span>
-								<span>2</span>
+								<span class="Profile__Main_Section_Title">Видео </span>
+								<span class="Profile__Main_Section_Number">1</span>
 							</a>
-							<div>
-								<div>
-									<a>
-										<img src="" alt="">
-										<div><span>0:03</span></div>
-									</a>
-									<a href="#">Название видео</a>
+							<div class="Profile__Videos_Video-container">
+								<a class="Profile__Videos_Video">
+									<span>0:03</span>
+								</a>
+								<div class="Profile__Videos_Text-container">
+									<a href="#">Underidoderidoderiododeridoo.mp4</a>
 									<span>64,7K просмотров</span>
 								</div>
 							</div>
-							<button>Загрузить видео</button>
+							<div class="Profile__Videos_Button-container">
+								<button>Загрузить видео</button>
+							</div>
 						</section>
 					</div>
 				</div>

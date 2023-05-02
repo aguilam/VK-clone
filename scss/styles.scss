@@ -76,6 +76,7 @@ header{
 }
 .musicPlayer-container{
   width: 495px;
+  height: 100%;
 }
 .musicPlayer{
   display: flex;
@@ -136,11 +137,13 @@ main{
 .side-bar__link_container{
   width: 148px;
   :hover{
-    background: red;
+    background: #4f4f50;
   }
 }
 .side-bar__link{
   height: 30px;
+  padding-left: 5px;
+  border-radius: 7px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -262,6 +265,9 @@ main{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  :hover{
+    text-decoration: underline;
+  }
 }
 .Profile__AdditionInfo_InfoBlock{
   display: flex;
@@ -293,6 +299,10 @@ main{
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
+  :hover{
+    background: #4d4c4c;
+    border-radius: 8px;
+  }
 }
 .Profile__Actions_Block{
   background: #424242;  
@@ -308,7 +318,7 @@ main{
     padding: 8px 16px;
   }
   span{
-    padding: 8px 16px;
+    padding: 8px 8px 8px 16px;
   }
 }
 .Profile__Main_Container{
@@ -385,6 +395,9 @@ main{
   justify-content: space-between;
   color: #E1E3E6;
   font-size: 14px;
+  :hover{
+    background: #4d4c4c;
+  }
   button{
     width: 49%;
     height: 32px;
@@ -472,9 +485,14 @@ main{
 }
 .Profile__Main_Tester{
   margin-bottom: 16px;
+  padding: 7px;
+  :hover{
+    background-color: #4f4f50;
+  }
 }
 .Profile__Tester_Container{
-  padding: 16px;
+  border-radius: 10px;
+  padding: 9px;
   span{
     font-weight: 400;
     font-size: 14px;
@@ -543,31 +561,104 @@ main{
   }
 }
 .Profile__Main_Subscriptions{
-  padding: 16px;
+  margin-bottom: 16px;
+  padding: 16px 8px;
+  a{
+    text-decoration: none;
+  }
 }
-.Main__Subscriptions_List{
+.Profile__Subscriptions_List{
   margin-top: 10px;
   :hover{
     background-color: #4f4f50;
   }
 }
-.Subscriptions__List_Item{
+.Profile__Subscriptions__List_Item{
   display: flex;
   flex-direction: row;
+  border-radius: 13px;
+  padding: 3px 10px;
   img{
     width: 48px;
     height: 48px;
     border-radius: 60px;
   }
 }
-.Text-container{
+.Profile__List__Item_Text-container{
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+  padding: 8px 0px;
 }
-.Subscriptions__Item_Title{
-
+.Profile__Subscriptions__Item_Title{
+  font-size: 13px;
+  font-weight: 400;
+  color: #E1E3E6;
+  margin-bottom: 5px;
 }
-.Subscriptions__Item_Description{
-
+.Profile__Subscriptions__Item_Description{
+  font-size: 12px;
+  font-weight: 400;
+  color: #858585;
+}
+.Profile__Main_Videos{
+  padding: 16px;
+  a{
+   text-decoration: none; 
+  }
+}
+.Profile__Videos_Video-container{
+  margin: 10px 0px;
+}
+.Profile__Videos_Video{
+  width: 215px;
+  height: 120px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  border-radius: 13px;
+  background-image: url("https://i.mycdn.me/getVideoPreview?id=1522987895391&idx=7&type=39&tkn=bGCQYcynzq05BXzkN_Bt895PpoE&fn=vid_t");
+  background-size: 100%;
+  background-position: center;
+  span{
+    color: #E1E3E6;
+    background: rgba(20, 20, 20, 0.7);
+    padding: 4px;
+    border-radius: 5px;
+  }
+}
+.Profile__Videos_Text-container{
+  display: flex;
+  flex-direction: column;
+  a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #E1E3E6;
+    margin: 10px 0px 3px 0px;
+  }
+  span{
+    font-size: 13px;
+    font-weight: 400;
+    color: #858585;
+  }
+}
+.Profile__Videos_Button-container{
+  :hover{
+    background: #4d4c4c;
+  }
+  button{
+    width: 100%;
+    height: 32px;
+    border: 0px;
+    border-radius: 8px;
+    background: #424242;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #E1E3E6;
+    font-size: 14px;
+  }
 }
