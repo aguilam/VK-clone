@@ -856,6 +856,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 13px 13px 0px 0px;
 }
 
 .Profile__Header_Tabs-Container {
@@ -911,7 +912,7 @@ main {
   background: #333333;
 }
 
-.Profile__Wall_No-Post {
+.Profile__Wall_FirstPost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,11 +920,274 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 0px 0px 13px 13px;
+  padding: 20px;
+  margin-bottom: 16px;
+  color: #858585;
+}
+
+.Profile__Wall_Post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  padding: 20px;
+  color: #858585;
+}
+
+.Profile__Wall__Post__Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Profile__Wall__Post__Header a {
+  text-decoration: none;
+}
+
+.Profile__Wall__Post__Header__InfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px auto;
+}
+.Profile__Wall__Post__Header__InfoContainer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 60px;
+}
+
+.Profile__Wall__Post__Header__InfoContainer__Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+.Profile__Wall__Post__Header__InfoContainer__Info span {
+  font-size: 13px;
+  font-weight: 400;
   color: #858585;
+}
+
+.Profile__Wall__Post__Header__InfoContainer__Info__User {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Profile__Wall__Post__Header__InfoContainer__Info__User span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #529EF4;
+}
+.Profile__Wall__Post__Header__InfoContainer__Info__User img {
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+.Profile__Wall__Post__Header__InfoContainer__Info__User svg {
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.Profile__Wall__Post__PostRepost {
+  margin-top: 15px;
+  border-left: 2px solid #858585;
+  padding-left: 12px;
+}
+.Profile__Wall__Post__PostRepost a {
+  text-decoration: none;
+}
+
+.Profile__Wall__Post__PostRepost__Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 8px;
+}
+.Profile__Wall__Post__PostRepost__Header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 60px;
+}
+
+.Profile__Wall__Post__PostRepost__Header__InfoContainer span {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: #858585;
+  margin-right: 3px;
+}
+
+.Profile__Wall__Post__PostRepost__Header__InfoContainer__User span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #E1E3E6;
+}
+
+.Profile__Wall__Post__PostRepost__Main img {
+  width: 100%;
+  height: 330px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #E1E3E6;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3px;
+}
+.Profile__Wall__Post__PostRepost__Main__Audio img {
+  width: 44px;
+  height: 44px;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio__Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio__Info__TextBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio__Info__TextBox__Title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #E1E3E6;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio__Info__TextBox__Description {
+  font-size: 13px;
+  font-weight: 400;
+  color: #858585;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio__Buttons_Add {
+  background: transparent;
+  border: 0px;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Audio__Buttons_Play {
+  background: #E1E3E6;
+  border: 0px transparent;
+  border-radius: 80px;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Video__Title {
+  margin-top: 15px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #529EF4;
+}
+
+.Profile__Wall__Post__PostRepost__Main__Video__Views {
+  margin: 5px 0px;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: #858585;
+}
+
+.Profile__Wall__Post__Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+.Profile__Wall__Post__Footer span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #858585;
+  margin-left: 5px;
+}
+.Profile__Wall__Post__Footer button {
+  background: #424242;
+  margin-right: 5px;
+  padding: 3px 10px;
+  border: 0px;
+  border-radius: 60px;
 }
 
 .Profile__Main_Info {
